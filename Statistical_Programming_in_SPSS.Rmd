@@ -1,0 +1,110 @@
+---
+title: "Statitical Programming in SPSS"
+output:
+    html_document:
+        toc: true
+        toc_depth: 3
+        theme: cerulean
+        highlight: zenburn
+---
+
+# Preamble
+
+# Data
+
+## Variables
+
+### Create
+
+### Modify
+
+### Label/Document
+
+## Cases
+
+## Datasets
+
+### Read
+
+### Write
+
+### Import
+
+### Export
+
+### Merge
+
+### Transpose
+
+### Restructure
+
+### Codebook
+
+# Analysis
+
+## Frequencies
+
+## Descriptive Statistics
+
+## Testing Normality
+
+## Cross-tabulation
+
+## Correlation
+
+## Reports
+
+# Graphics
+
+## Univariate
+
+### Histogram
+
+### Boxplot
+
+### Stem and Leaf
+
+### Dot Chart
+
+### Pie Chart
+
+### Bar Graph
+
+## Bivariate
+
+### Line Graph
+
+### Scatterplot
+
+## Diagnostic
+
+### Q-Q Plots
+
+### Residuals
+
+### Leverage
+
+# Programming
+
+## Loops
+
+## Conditionals
+
+## Array Structures
+
+## Macros
+
+# Advanced Topics
+
+## Data Sets from Descriptive Statistics
+
+## Bootstrapping
+
+## Cross-Validation
+
+## Propensity Score Matching
+
+## Matrix Functions
+
+# References and Resources
+
