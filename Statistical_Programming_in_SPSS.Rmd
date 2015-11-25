@@ -1,5 +1,8 @@
 ---
-title: "Statitical Programming in SPSS"
+title: "Statistical Programming in SPSS"
+author: "Adam Davey and Ting Dai"
+date: "2015-11-25"
+
 output:
     html_document:
         toc: true
@@ -8,15 +11,57 @@ output:
         highlight: zenburn
 ---
 
+If you don't like the rendering here, try combinations from here.
+[R Markdown examples](http://rmarkdown.rstudio.com/html_document_format.html)
 # Preamble
+
+In the following sections, after a small amount of prosyletizing, we work through the steps involved in performing many of the most common tasks in statistical programming in order to help get you up to speed with these tasks as quickly as possible.
+
+# Reproducible Research
+
+Whether you know it or not, scientists are increasingly being held to account for the quality and reproducibility of their science. We have found that, although these practices can take some time to fully adopt and incorporate into your daily work, the effort quickly pays off in terms of quicker time to results, fewer mistakes when coding, greater opportunities to catch these mistakes, and quicker correction of mistakes when they (inevitably) occur. Many journals are now increasing the demands on authors to provide access to data and codes.
+
+# Syntax
+
+Performing your statistical analyses using syntax is central to ensuring that your work is reproducible, able to be repeated by you on another occasion or share with others. Once you get used to working with syntax rather than drop-down menus, you will find that your own work proceeds much more quickly, is far less error-prone, and that you will completely forget why you ever bothered with the menus in the first place. (But we will also show you how to make use of them when you are learning something new.)
 
 # Data
 
+We organize data manipulation tasks under three broad categories: manipulations to *variables*, *cases* or observations, and *datasets*. Many of these have one or more subsections.
+
+## Preliminaries
+
+- By default, all lines of an **SPSS** syntax file end with a period (.) *delimiter*. A single command can span multiple lines of the syntax file for clarity or organization, but each command must end with the period delimiter.
+
+- *Comments* are very important in programs. They should document why you are doing something rather than what you are doing (which will hopefully be obvious). If one approach to creating a new variable would seem obvious, but you are doing something differently, indicate the reason why you are doing so. Comments should begin with an asterisk (`*`) and end with a period (.). Multiple line comments should begin with /`*` and end with /`*`.
+
 ## Variables
+
+With regard to variable manipulations, we further organize operations in terms of whether our goal is to *create*, *modify*, or *label*/document the variables.
 
 ### Create
 
+In general, ```compute``` is the **SPSS** command used to create new variables. It is of the general format ```compute newVariable = somethingElse.```
+
+We could perhaps also set this up as a block quote.
+
+> compute newVariable = somethingElse.
+
+Better yet might be to "trick" **R** into setting this up as its own code block.
+
+```{r, echo=TRUE, eval=FALSE, results='markup'}
+compute newVariable = somethingElse.
+```
+
 ### Modify
+
+Numeric
+
+String
+
+Dates and Times
+
+Aggregate
 
 ### Label/Document
 
