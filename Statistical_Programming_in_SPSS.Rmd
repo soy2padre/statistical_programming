@@ -69,11 +69,38 @@ Aggregate
 
 ## Datasets
 
+### Documenting
+
+It is often useful, for statistical packages that can accommodate it, to include a brief decription of the data file, its contents, and any addition meta-data (data about data) that are useful in identifying the file. In **SPSS**, the relevant command is ```DOCUMENT```.
+
+Use ```DOCUMENT <text to be added>``` in order to add a description of the file.
+
+Use ```DISPLAY DOCUMENTS``` in order to show all documents associated with a data file.
+
+Use ```DROP DOCUMENTS``` to delete all documents associated with a data file. I wonder whether it is possible to drop or edit specific documents without having to kill them all.
+
+Similar features exist for output from statistical analyses.
+
+Relevant commands include ```TITLE <title of output>``` and ```SUBTITLE <subtitle of output>``` to include text that will appear at the top of each page of output, as well as ```ECHO <text to appear in output>``` to include comments directly in output files.
+
 ### Read
 
 ### Write
 
 ### Import
+
+**SPSS** can import data in a wide variety of formats including **Excel**, **SAS**, **Stata**, and text files. Each of them makes use of the ```GET DATA``` command, which takes a number of different options.
+
+To import **Excel** data, you need to specify the location of the file, the type of data (e.g., XLSX), along with which sheet and range of cells should be read.
+
+```{r, echo=TRUE, eval=FALSE, results='markup'}
+GET DATA /TYPE=XLSX 
+  /FILE='.../x.xlsx' 
+  /SHEET=name 'Sheet1' 
+  /CELLRANGE=full 
+  /READNAMES=on 
+  /ASSUMEDSTRWIDTH=32767. 
+```
 
 ### Export
 
