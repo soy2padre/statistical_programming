@@ -69,6 +69,9 @@ Aggregate
 
 ## Datasets
 
+<<<<<<< HEAD
+### Projects
+=======
 ### Documenting
 
 It is often useful, for statistical packages that can accommodate it, to include a brief decription of the data file, its contents, and any addition meta-data (data about data) that are useful in identifying the file. In **SPSS**, the relevant command is ```DOCUMENT```.
@@ -82,8 +85,16 @@ Use ```DROP DOCUMENTS``` to delete all documents associated with a data file. I 
 Similar features exist for output from statistical analyses.
 
 Relevant commands include ```TITLE <title of output>``` and ```SUBTITLE <subtitle of output>``` to include text that will appear at the top of each page of output, as well as ```ECHO <text to appear in output>``` to include comments directly in output files.
+>>>>>>> a13d9ca02c1fed65c93b5eaa6cf2b64cf6ff8f54
 
 ### Read
+
+**SPSS** can open data sets in **SPSS** format. To read in an **SPSS** data: 
+
+```{r, echo=TRUE, eval=FALSE, results='markup'}
+GET
+  FILE='.../filename.sav'.
+```
 
 ### Write
 
