@@ -69,7 +69,16 @@ Aggregate
 
 ## Datasets
 
+### Projects
+
 ### Read
+
+**SPSS** can open data sets in **SPSS** format. To read in an **SPSS** data: 
+
+```{r, echo=TRUE, eval=FALSE, results='markup'}
+GET
+  FILE='.../filename.sav'.
+```
 
 ### Write
 
