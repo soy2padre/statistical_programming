@@ -7,8 +7,8 @@ output:
     html_document:
         toc: true
         toc_depth: 3
-        theme: cerulean
-        highlight: zenburn
+        theme: journal
+        highlight: kate
 ---
 
 If you don't like the rendering here, try combinations from here.
