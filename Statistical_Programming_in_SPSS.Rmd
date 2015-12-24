@@ -1,14 +1,15 @@
 ---
 title: "Statistical Programming in SPSS"
 author: "Adam Davey and Ting Dai"
-date: "2015-11-25"
-
+date: '2015-11-25'
 output:
-    html_document:
-        toc: true
-        toc_depth: 3
-        theme: journal
-        highlight: kate
+  html_document:
+    highlight: kate
+    theme: journal
+    toc: yes
+    toc_depth: 3
+  pdf_document:
+    toc: yes
 ---
 
 If you don't like the rendering here, try combinations from here.
@@ -24,6 +25,45 @@ Whether you know it or not, scientists are increasingly being held to account fo
 # Syntax
 
 Performing your statistical analyses using syntax is central to ensuring that your work is reproducible, able to be repeated by you on another occasion or share with others. Once you get used to working with syntax rather than drop-down menus, you will find that your own work proceeds much more quickly, is far less error-prone, and that you will completely forget why you ever bothered with the menus in the first place. (But we will also show you how to make use of them when you are learning something new.)
+
+## Basics about **SPSS** Commands
+
+A unit of **SPSS** syntax, or "command", comsists of a permanent part of the language (i.e., keywords,  including subcommands, functions, and operators), and a part that is particular to a data set (i.e., variables, file names). 
+
+Most keywords can be abbreviated to the first three or four letters, so the following two forms of syntax return identical results:
+
+```{r, echo=TRUE, eval=FALSE, results='markup'}
+FREQUENCY VariableName.
+```
+
+```{r, echo=TRUE, eval=FALSE, results='markup'}
+FREQ VariableName.
+``` 
+
+**SPSS** syntax is not case-sensitive, so the following two forms of syntax return identical results:
+
+```{r, echo=TRUE, eval=FALSE, results='markup'}
+FREQUENCY VariableName.
+```
+
+```{r, echo=TRUE, eval=FALSE, results='markup'}
+Frequency VariableName.
+``` 
+
+**SPSS** command elements are separated by a delimiter, usualy a space. A ***SPSS*** subcommand is introduced by a forward slash ```/```, following its command on the same line or on separate lines.
+
+**SPSS** syntax can be run in two modes--batch and interactive mode. There are a few rules specific to each mode:
+
+
+
+Difference|Batch Mode  |Interactive Mode
+----------|------------|----------------
+1|Commands must begin in the first colum (Or, a ```+``` or ```-``` symbol must appear in the first colum.)| Most commands may begin in any column.
+2|Command terminators are not required| Command terminators must be used (the default terminator is a period ```.```)
+3|If a command is longer than one line, the first column in each subsequent line must be blank.|A command line may not be more than 80 characters, although a single command may continue over many lines.
+4||Each command must start on a new line.
+
+
 
 # Data
 
